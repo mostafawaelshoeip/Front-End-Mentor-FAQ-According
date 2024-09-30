@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+
+/* MAIN COLORS */
+:root {
+    --White-color: hsl(0, 0%, 100%);
+    --main-color: #ab2cdb;
+    --light-pink: hsl(275, 100%, 97%);
+    --gray-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Work sans", sans-serif;
+    line-height: 1.6;
+}
+
+main img {
+    width: 30px;
+}
+
+main hr {
+color: gray;
+opacity: 0.2;
+margin: 0 1.5rem;
+}
+
+body {
+    background-image: url(./../assets/images/background-pattern-desktop.svg);
+    /* background-size: 100vw 50vh; */
+    background-repeat: repeat-x;
+    /* background-position: 0 0; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+ 
+main {
+    max-width: 33rem;
+    max-height: 34rem;
+    background-color: var(--White-color);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3 );
+    padding: 1rem;
+    margin: 1rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+}
+
+header h1 {
+    font-weight: 800;
+}
+
+header img {
+    margin-right: 1rem;
+    width: 30px;
+}
+
+section {
+    padding: 0 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+article {
+    color: var(--gray-purple);
+    /* opacity: 0.8; */
+    padding: 1rem;
+    width: 100%;
+}
+
+footer {
+    /* display: flex; */
+    width: 100%;
+    font-weight: bold;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    padding: 0.5rem;}
+
+footer div div:last-child {
+    width: fit-content;
+}
+
+footer div div:last-child:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+footer div div:first-child:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/* MEDIA QUERY  */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        height: fit-content;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    main img {
+        width: 22px;
+    }
+
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    section {
+        flex-wrap: nowrap;
+    }
+
+    footer div {
+        padding: 1.5% 2.5%;
+    }
+}
