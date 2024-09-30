@@ -29,9 +29,7 @@ margin: 0 1.5rem;
 
 body {
     background-image: url(./../assets/images/background-pattern-desktop.svg);
-    /* background-size: 100vw 50vh; */
     background-repeat: repeat-x;
-    /* background-position: 0 0; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -42,7 +40,7 @@ body {
  
 main {
     max-width: 33rem;
-    max-height: 34rem;
+    height: 34rem;
     background-color: var(--White-color);
     border-radius: 10px;
     display: flex;
@@ -61,17 +59,18 @@ header {
 }
 
 header h1 {
-    font-weight: 800;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 header img {
     margin-right: 1rem;
-    width: 30px;
+    width: 40px;
 }
 
 section {
     padding: 0 1rem;
-    font-weight: 700;
+    font-weight: 650;
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
@@ -85,15 +84,13 @@ section img:hover {
 
 article {
     color: var(--gray-purple);
-    /* opacity: 0.8; */
     padding: 1rem;
     width: 100%;
 }
 
 footer {
-    /* display: flex; */
     width: 100%;
-    font-weight: bold;
+    font-weight: 650;
     flex-flow: row wrap;
     justify-content: space-between;
 }
@@ -101,7 +98,6 @@ footer {
 footer div {
     width: 100%;
     display: flex;
-    /* flex-flow: row wrap; */
     justify-content: space-between;
     padding: 0.5rem;}
 
